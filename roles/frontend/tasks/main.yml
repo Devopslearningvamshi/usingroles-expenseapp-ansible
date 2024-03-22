@@ -1,13 +1,9 @@
-  - name : Frontend
-  hosts : all
-  become : yes   # this runs under the sudo user 
-  tasks:
   - name: install Nginx 
     ansible.builtin.dnf:
       name: nginx
       state: latest
 
-  - name: Copy file with owner and permissions
+    - name: Copy file with owner and permissions
     ansible.builtin.copy:
       src: expense.conf
       dest: /etc/nginx/default.d/expense.conf
