@@ -5,7 +5,7 @@
 
   - name: Copy file with owner and permissions
     ansible.builtin.copy:
-      src: expense.conf
+      src: /frontend/files/expense.conf
       dest: /etc/nginx/default.d/expense.conf
 
   - name: Removing the directory
