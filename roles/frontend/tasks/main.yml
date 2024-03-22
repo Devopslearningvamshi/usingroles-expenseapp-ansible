@@ -3,7 +3,7 @@
       name: nginx
       state: latest
 
-    - name: Copy file with owner and permissions
+  - name: Copy file with owner and permissions
     ansible.builtin.copy:
       src: expense.conf
       dest: /etc/nginx/default.d/expense.conf
