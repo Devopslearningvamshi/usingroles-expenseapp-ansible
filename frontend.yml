@@ -1,0 +1,6 @@
+- name : Frontend
+  hosts : all
+  become : yes   # this runs under the sudo user 
+  roles:
+    - frontend 
+    
